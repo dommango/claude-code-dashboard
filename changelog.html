@@ -263,7 +263,18 @@
                     <h3>CC v2.1.86 Updates</h3>
                     <ul class="change-list">
                         <li><span class="tag tag-add">ADD</span><code>CLAUDE_CODE_MCP_SERVER_NAME</code> / <code>CLAUDE_CODE_MCP_SERVER_URL</code> — Inject server identity into MCP <code>headersHelper</code> scripts, enabling one helper to serve multiple servers (v2.1.85)</li>
-                        <li><span class="tag tag-change">CHG</span>Bumped release tag from v2.1.85 to v2.1.86 (March 27, 2026)</li>
+                    </ul>
+                </div>
+
+                <div class="change-section">
+                    <h3>CC v2.1.89 Updates</h3>
+                    <ul class="change-list">
+                        <li><span class="tag tag-add">ADD</span><code>PermissionDenied</code> hook event — fires after auto mode classifier denial; return <code>{retry: true}</code> to allow model retry</li>
+                        <li><span class="tag tag-add">ADD</span><code>"defer"</code> PreToolUse return value — pauses headless session at tool call; resume via <code>-p --resume</code></li>
+                        <li><span class="tag tag-add">ADD</span><code>showThinkingSummaries</code> JSON setting — set <code>true</code> to restore thinking summaries in interactive sessions (now off by default)</li>
+                        <li><span class="tag tag-add">ADD</span><code>CLAUDE_CODE_NO_FLICKER=1</code> env var — opt into flicker-free alt-screen rendering</li>
+                        <li><span class="tag tag-add">ADD</span><code>MCP_CONNECTION_NONBLOCKING=true</code> env var — skip MCP connection wait in <code>-p</code> mode</li>
+                        <li><span class="tag tag-add">ADD</span><code>/env</code> slash command — set environment variables for tool commands</li>
                     </ul>
                 </div>
             </div>
