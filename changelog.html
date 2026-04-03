@@ -284,6 +284,16 @@
                         <li><span class="tag tag-add">ADD</span><code>"defer"</code> PreToolUse hook decision — Headless sessions pause at tool call; resume with <code>-p --resume</code> to re-evaluate</li>
                     </ul>
                 </div>
+
+                <div class="change-section">
+                    <h3>CC v2.1.91 Updates</h3>
+                    <ul class="change-list">
+                        <li><span class="tag tag-add">ADD</span><code>/feedback</code> slash command — Explains unavailability when not supported instead of hiding from slash menu</li>
+                        <li><span class="tag tag-add">ADD</span><code>disableSkillShellExecution</code> JSON setting — Disable inline shell execution in skills, slash commands, and plugin commands</li>
+                        <li><span class="tag tag-add">ADD</span><code>_meta["anthropic/maxResultSizeChars"]</code> MCP annotation — Override tool result size limit per-call (up to 500K chars)</li>
+                        <li><span class="tag tag-add">ADD</span><code>&lt;plugin&gt;/bin/</code> path — Plugin executables directory; executables invocable as bare commands from Bash tool</li>
+                    </ul>
+                </div>
             </div>
         </div>
 

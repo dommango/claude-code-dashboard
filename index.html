@@ -287,7 +287,7 @@
             <span style="font-size: 0.65rem; color: var(--text-muted); font-weight: 400;">Auto-updated reference — always current</span>
         </div>
         <div class="global-controls">
-            <span class="release-tag">As of release: v2.1.90</span>
+            <span class="release-tag">As of release: v2.1.91</span>
             <a href="changelog.html" class="header-link">Changelog</a>
             <button class="theme-toggle" id="themeBtn" onclick="toggleTheme()">&#9728;&#65039;</button>
             <input type="text" id="dashboardSearch" placeholder="Search... (Ctrl+K)">
@@ -428,6 +428,7 @@
                     <tr class="search-item"><td><code>/pr-comments [PR]</code></td><td class="desc">Fetch GitHub PR comments</td></tr>
                     <tr class="search-item"><td><code>/security-review</code></td><td class="desc">Security analysis of uncommitted code</td></tr>
                     <tr class="search-item"><td><code class="new">/powerup</code></td><td class="desc">Interactive lessons teaching CC features with animated demos</td></tr> <!-- added:v2.1.90 -->
+                    <tr class="search-item"><td><code class="new">/feedback</code></td><td class="desc">Submit feedback; explains unavailability when not supported</td></tr> <!-- added:v2.1.91 -->
                     <tr class="search-item"><td><code>/stats</code> / <code>/insights</code></td><td class="desc">Usage streaks / HTML sessions report</td></tr>
                     <tr class="search-item"><td><code>/desktop</code></td><td class="desc">Continue session in Desktop app</td></tr>
                     <tr class="search-item"><td><code>/remote-control</code></td><td class="desc">Bridge session to claude.ai/code</td></tr>
@@ -496,6 +497,7 @@
                     <tr class="search-item"><td><code>autoMemoryDirectory</code></td><td class="desc">Custom auto-loaded memory dir</td></tr>
                     <tr class="search-item"><td><code>worktree.sparsePaths</code></td><td class="desc">Sparse checkout dirs for agents</td></tr>
                     <tr class="search-item"><td><code class="new">showThinkingSummaries</code></td><td class="desc">Show thinking summaries in interactive sessions (default: false)</td></tr> <!-- added:v2.1.89 -->
+                    <tr class="search-item"><td><code class="new">disableSkillShellExecution</code></td><td class="desc">Disable inline shell execution in skills, slash commands, and plugin commands</td></tr> <!-- added:v2.1.91 -->
                 </table>
             </div>
 
@@ -529,6 +531,7 @@
                     <tr class="search-item"><td><code>/claude-api</code></td><td class="desc">Load API + SDK reference into context</td></tr>
                     <tr class="search-item"><td><code>.claude/skills/&lt;name&gt;/</code></td><td class="desc">Project specific skill directory</td></tr>
                     <tr class="search-item"><td><code>~/.claude/skills/&lt;name&gt;/</code></td><td class="desc">Global personal skill directory</td></tr>
+                    <tr class="search-item"><td><code class="new">&lt;plugin&gt;/bin/</code></td><td class="desc">Plugin executables — invocable as bare commands from Bash tool</td></tr> <!-- added:v2.1.91 -->
                 </table>
             </div>
 
@@ -594,6 +597,7 @@
                     <tr class="search-item"><td><code>claude mcp serve</code></td><td class="desc">Run Claude Code as an MCP server</td></tr>
                     <tr class="search-item"><td><code>--transport http/stdio/sse</code></td><td class="desc">Protocol connection methods</td></tr>
                     <tr class="search-item"><td><code>Elicitation</code></td><td class="desc">Servers can request input mid-task</td></tr>
+                    <tr class="search-item"><td><code class="new">_meta["anthropic/maxResultSizeChars"]</code></td><td class="desc">Override MCP tool result size limit per-call (up to 500K chars)</td></tr> <!-- added:v2.1.91 -->
                 </table>
             </div>
 
